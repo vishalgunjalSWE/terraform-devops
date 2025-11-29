@@ -136,3 +136,12 @@ module "vpc" {
 terraform init
 terraform apply
 ```
+## **7. Workspaces (Environment Management)**
+### **Create & Switch Workspaces**
+```sh
+terraform workspace new dev
+terraform workspace new prod
+terraform workspace select prod
+terraform workspace list
+```
+
