@@ -15,3 +15,10 @@ sudo apt-get update && sudo apt-get install terraform
 # Verify Installation
 terraform -v
 ```
+
+### **Initialize Terraform**
+```sh
+terraform init
+```
+- Downloads provider plugins
+- Sets up the working directory
