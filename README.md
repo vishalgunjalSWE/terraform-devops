@@ -114,3 +114,25 @@ resource "aws_instance" "example" {
   instance_type = var.env == "prod" ? "t3.large" : "t2.micro"
 }
 ```
+
+## **6. Terraform Modules**
+### **Create & Use a Module**
+```sh
+mkdir -p modules/vpc
+```
+```hcl
+# modules/vpc/main.tf
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
+}
+```
+```hcl
+# Root module
+module "vpc" {
+  source = "./modules/vpc"
+}
+```
+```sh
+terraform init
+terraform apply
+```
