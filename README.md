@@ -97,3 +97,20 @@ output "instance_ip" {
 ```sh
 terraform output instance_ip
 ```
+
+## **5. Loops & Conditionals**
+### **for_each Example**
+```hcl
+resource "aws_s3_bucket" "example" {
+  for_each = toset(["bucket1", "bucket2", "bucket3"])
+  bucket   = each.key
+}
+```
+
+### **Conditional Expressions**
+```hcl
+variable "env" {}
+resource "aws_instance" "example" {
+  instance_type = var.env == "prod" ? "t3.large" : "t2.micro"
+}
+```
