@@ -22,3 +22,10 @@ terraform init
 ```
 - Downloads provider plugins
 - Sets up the working directory
+
+## **2. Terraform Core Commands**
+### **Format & Validate Code**
+```sh
+terraform fmt       # Formats Terraform code
+terraform validate  # Validates Terraform syntax
+```
