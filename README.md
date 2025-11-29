@@ -29,3 +29,10 @@ terraform init
 terraform fmt       # Formats Terraform code
 terraform validate  # Validates Terraform syntax
 ```
+
+### **Plan & Apply Infrastructure**
+```sh
+terraform plan      # Shows execution plan without applying
+terraform apply     # Creates/updates infrastructure
+terraform apply -auto-approve  # Applies without manual confirmation
+```
