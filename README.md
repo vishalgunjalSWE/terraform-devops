@@ -68,3 +68,7 @@ terraform {
   }
 }
 ```
+
+```sh
+terraform init  # Reinitialize with remote backend
+```
