@@ -238,17 +238,3 @@ Log Levels: `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`
 * Always version-lock providers using `required_providers`
 
 ---
-
-```
-
----
-
-If you want, I can also add:
-
-✅ **Badges** (Terraform version, License, AWS, GitHub Actions)  
-✅ **Architecture diagram**  
-✅ **Folder structure**  
-✅ **Sample project template**
-
-Just tell me!
-```
