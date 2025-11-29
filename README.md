@@ -1,8 +1,3 @@
-Here is your enhanced **README.md** in pure Markdown format — clean, copy-paste ready:
-
----
-
-````md
 # 🚀 Terraform for DevOps Engineers  
 A complete, practical, and production-ready reference for mastering Terraform as a DevOps Engineer.  
 This repository covers **installation, commands, state management, modules, workspaces, debugging**, and everything you need to deploy infrastructure at scale.
