@@ -72,3 +72,13 @@ terraform {
 ```sh
 terraform init  # Reinitialize with remote backend
 ```
+## **4. Variables & Outputs**
+### **Define & Use Variables**
+```hcl
+variable "instance_type" {
+  default = "t2.micro"
+}
+resource "aws_instance" "web" {
+  instance_type = var.instance_type
+}
+```
