@@ -36,3 +36,9 @@ terraform plan      # Shows execution plan without applying
 terraform apply     # Creates/updates infrastructure
 terraform apply -auto-approve  # Applies without manual confirmation
 ```
+
+### **Destroy Infrastructure**
+```sh
+terraform destroy  # Destroys all managed resources
+terraform destroy -auto-approve  # Without confirmation
+```
