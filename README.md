@@ -87,3 +87,13 @@ resource "aws_instance" "web" {
 ```sh
 terraform apply -var="instance_type=t3.small"
 ```
+
+### **Output Values**
+```hcl
+output "instance_ip" {
+  value = aws_instance.web.public_ip
+}
+```
+```sh
+terraform output instance_ip
+```
