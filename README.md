@@ -82,3 +82,8 @@ resource "aws_instance" "web" {
   instance_type = var.instance_type
 }
 ```
+
+### **Pass Variables in CLI**
+```sh
+terraform apply -var="instance_type=t3.small"
+```
