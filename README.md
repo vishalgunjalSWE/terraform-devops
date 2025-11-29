@@ -145,3 +145,10 @@ terraform workspace select prod
 terraform workspace list
 ```
 
+## **8. Terraform Debugging & Logs**
+```sh
+export TF_LOG=DEBUG  # Enable debug logs
+terraform apply 2>&1 | tee debug.log  # Save logs
+```
+
+---
