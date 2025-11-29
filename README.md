@@ -49,3 +49,9 @@ terraform destroy -auto-approve  # Without confirmation
 terraform state list  # Lists all managed resources
 terraform show        # Shows detailed resource info
 ```
+
+### **Manually Modify State**
+```sh
+terraform state mv <source> <destination>  # Move resource in state file
+terraform state rm <resource>  # Removes resource from state (not from infra)
+```
