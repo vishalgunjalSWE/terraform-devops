@@ -55,3 +55,16 @@ terraform show        # Shows detailed resource info
 terraform state mv <source> <destination>  # Move resource in state file
 terraform state rm <resource>  # Removes resource from state (not from infra)
 ```
+
+### **Remote Backend (S3 & DynamoDB)**
+```hcl
+terraform {
+  backend "s3" {
+    bucket         = "my-terraform-state"
+    key            = "global/s3/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-lock"
+    encrypt        = true
+  }
+}
+```
